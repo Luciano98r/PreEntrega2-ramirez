@@ -1,0 +1,171 @@
+/* Estilos CSS para Camisetas Lucho */
+
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+background-image: url("../img/backgrounds/dark-blue.jpg");
+
+}
+/* Estilos del encabezado */
+
+.encabezado {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado h1 {
+    font-size: 24px;
+}
+
+.encabezado nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.encabezado nav ul li {
+    margin-right: 20px;
+}
+
+.encabezado nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos del banner */
+
+.banner {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los productos */
+
+.productos {
+    padding: 50px;
+}
+
+.productos h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.productos p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contenedorProductos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.producto img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.producto .boton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto .boton:hover {
+    background-color: #555;
+}
+
+/* Estilos footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsive */
+
+@media screen and (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado nav ul {
+        margin-top: 20px;
+    }
+
+    .encabezado nav ul li {
+        margin-right: 0;
+    }
+
+    .productos {
+        padding: 20px;
+    }
+
+    .producto {
+        max-width: 100%;
+    }
+}
